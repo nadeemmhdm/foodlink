@@ -4,94 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Link - Bridging Waste and Want</title>
-    <meta name="description" content="Food Link Project Details - Infographics, Reports, and Resources.">
+    <title>Food Link – Bridging Waste and Want</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- Watermark Overlay -->
+    <div class="watermark-overlay"></div>
 
-    <header class="hero">
-        <div class="container">
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <img src="logo.png" alt="Food Link Logo" class="site-logo">
             <h1>Food Link</h1>
             <p class="subtitle">Bridging Waste and Want</p>
-        </div>
-    </header>
+        </header>
 
-    <main class="container">
-        <!-- Section 1: Infographic -->
-        <section class="card" id="infographic">
+        <!-- Video Section -->
+        <section class="card">
             <div class="card-header">
-                <h2>Project Overview</h2>
+                <h2>Project Video</h2>
                 <div class="header-actions">
-                    <button class="btn-icon share-btn" data-url="foodlink infographic-style.png" title="Share">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4-4 4m4-4v12"></path>
+                    <button class="btn-icon share-btn" data-url="https://youtu.be/m569gLaO9UE">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                         </svg>
                     </button>
-                    <a href="foodlink infographic-style.png" download class="btn-icon download-btn" title="Download">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    <a href="foodlink.mp4" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                     </a>
                 </div>
             </div>
             <div class="card-body">
-                <img src="foodlink infographic-style.png" alt="Food Link Infographic" class="responsive-img">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m569gLaO9UE?si=wBZ1ltun1C3M6zcH"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
-        <!-- Section 2: First PDF -->
-        <section class="card" id="report-1">
+        <!-- Audio Section -->
+        <section class="card">
             <div class="card-header">
-                <h2>Detailed Report</h2>
+                <h2>Audio Presentation</h2>
                 <div class="header-actions">
-                    <button class="btn-icon share-btn" data-url="foodlink.pdf" title="Share">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4-4 4m4-4v12"></path>
+                    <button class="btn-icon share-btn" data-url="വിശപ്പ്_മാറ്റാൻ_AI_IoT_സ്മാർട്ട്_ബോക്സുകൾ.m4a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                         </svg>
                     </button>
-                    <a href="foodlink.pdf" download class="btn-icon download-btn" title="Download">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    <a href="വിശപ്പ്_മാറ്റാൻ_AI_IoT_സ്മാർട്ട്_ബോക്സുകൾ.m4a" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="card-body pdf-container">
-                <iframe src="foodlink.pdf" title="Food Link Report" width="100%" height="600px">
-                    <p>Your browser does not support iframes. <a href="foodlink.pdf">Download the PDF</a>.</p>
-                </iframe>
-                <div class="mobile-fallback">
-                    <a href="foodlink.pdf" class="btn">View/Download PDF</a>
-                </div>
+            <div class="card-body">
+                <audio controls style="width: 100%;">
+                    <source src="വിശപ്പ്_മാറ്റാൻ_AI_IoT_സ്മാർട്ട്_ബോക്സുകൾ.m4a" type="audio/mp4">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </section>
 
-        <!-- Section 3: Mind Map -->
-        <section class="card" id="mindmap">
+        <!-- Mind Map Section -->
+        <section class="card">
             <div class="card-header">
-                <h2>Strategic Mind Map</h2>
+                <h2>Mind Map</h2>
                 <div class="header-actions">
-                    <button class="btn-icon share-btn" data-url="Mind Map For FoodLink.png" title="Share">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4-4 4m4-4v12"></path>
+                    <button class="btn-icon share-btn" data-url="Mind Map For FoodLink.png">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                         </svg>
                     </button>
-                    <a href="Mind Map For FoodLink.png" download class="btn-icon download-btn" title="Download">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    <a href="Mind Map For FoodLink.png" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                     </a>
                 </div>
@@ -101,79 +124,112 @@
             </div>
         </section>
 
-        <!-- Section 4: Video -->
-        <section class="card" id="video-section">
+        <!-- Infographic Section -->
+        <section class="card">
             <div class="card-header">
-                <h2>Project Video</h2>
+                <h2>Infographic</h2>
                 <div class="header-actions">
-                    <button class="btn-icon share-btn" data-url="https://www.youtube.com/embed/jHE1irFctC4?si=TJKCBP2OBireTpHt" title="Share">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4-4 4m4-4v12"></path>
+                    <button class="btn-icon share-btn" data-url="foodlink infographic-style.png">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                         </svg>
                     </button>
-                    <a href="foodlink.mp4" download class="btn-icon download-btn" title="Download">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    <a href="foodlink infographic-style.png" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                     </a>
                 </div>
             </div>
-            <div class="card-body video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jHE1irFctC4?si=TJKCBP2OBireTpHt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div style="width: 100%; max-width: 600px;">
-                    <audio controls style="width: 100%;">
-                        <source src="വിശപ്പ്_മാറ്റാൻ_AI_IoT_സ്മാർട്ട്_ബോക്സുകൾ.m4a" type="audio/mp4">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+            <div class="card-body">
+                <img src="foodlink infographic-style.png" alt="Food Link Infographic" class="responsive-img">
             </div>
         </section>
 
-        <!-- Section 5: Second PDF -->
-        <section class="card" id="report-2">
+        <!-- PDF Section 1 -->
+        <section class="card">
             <div class="card-header">
-                <h2>Bridging Waste and Want</h2>
+                <h2>Project Details (PDF)</h2>
                 <div class="header-actions">
-                    <button class="btn-icon share-btn" data-url="FoodLink_Bridging_Waste_and_Want.pdf" title="Share">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4-4 4m4-4v12"></path>
+                    <button class="btn-icon share-btn" data-url="FoodLink_Bridging_Waste_and_Want.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
                         </svg>
                     </button>
-                    <a href="FoodLink_Bridging_Waste_and_Want.pdf" download class="btn-icon download-btn"
-                        title="Download">
-                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    <a href="FoodLink_Bridging_Waste_and_Want.pdf" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
                     </a>
+                    <a href="FoodLink_Bridging_Waste_and_Want.pdf" target="_blank" class="btn">View Full</a>
                 </div>
             </div>
             <div class="card-body pdf-container">
-                <iframe src="FoodLink_Bridging_Waste_and_Want.pdf" title="Bridging Waste and Want Report" width="100%"
-                    height="600px">
-                    <p>Your browser does not support iframes. <a href="FoodLink_Bridging_Waste_and_Want.pdf">Download
-                            the PDF</a>.</p>
-                </iframe>
+                <iframe src="FoodLink_Bridging_Waste_and_Want.pdf" width="100%" height="500px"></iframe>
                 <div class="mobile-fallback">
-                    <a href="FoodLink_Bridging_Waste_and_Want.pdf" class="btn">View/Download PDF</a>
+                    <p>On mobile? <a href="FoodLink_Bridging_Waste_and_Want.pdf" target="_blank">Click here to view
+                            PDF</a></p>
                 </div>
             </div>
         </section>
 
-    </main>
+        <!-- PDF Section 2 -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Project Concept (PDF)</h2>
+                <div class="header-actions">
+                    <button class="btn-icon share-btn" data-url="foodlink.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="18" cy="5" r="3"></circle>
+                            <circle cx="6" cy="12" r="3"></circle>
+                            <circle cx="18" cy="19" r="3"></circle>
+                            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                        </svg>
+                    </button>
+                    <a href="foodlink.pdf" download class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a href="foodlink.pdf" target="_blank" class="btn">View Full</a>
+                </div>
+            </div>
+            <div class="card-body pdf-container">
+                <iframe src="foodlink.pdf" width="100%" height="500px"></iframe>
+                <div class="mobile-fallback">
+                    <p>On mobile? <a href="foodlink.pdf" target="_blank">Click here to view PDF</a></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Food Link Project. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 Food Link Project. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
