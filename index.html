@@ -225,11 +225,81 @@
 
     </div>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
     <footer>
         <p>&copy; 2025 Food Link Project. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Scroll to Top Logic
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add stagger animation to cards
+        const cards = document.querySelectorAll('.card');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = `fadeIn 0.8s ease forwards ${index * 0.1}s`;
+                    entry.target.style.opacity = '1';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        cards.forEach(card => {
+            card.style.opacity = '0'; // Initial state for animation
+            observer.observe(card);
+        });
+
+        // Typing Animation for Title
+        const titleElement = document.querySelector('.hero h1');
+        const text = titleElement.innerText;
+        titleElement.innerText = '';
+        let i = 0;
+
+        // Remove the CSS animation on h1 to strictly control with JS
+        titleElement.style.animation = 'none';
+        titleElement.style.opacity = '1';
+
+        function typeWriter() {
+            if (i < text.length) {
+                titleElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        // Start typing after a small delay
+        setTimeout(typeWriter, 500);
+    </script>
 </body>
 
 </html>
